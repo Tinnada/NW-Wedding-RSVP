@@ -1,0 +1,185 @@
+body {
+    font-family: 'Parisienne', cursive;
+    background: url('images/wedding-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Play Music Button - Same Size and Positioned Below Countdown */
+#play-music {
+    position: absolute;
+    top: 55px; /* Positioned directly below countdown */
+    right: 10px;
+    width: 160px; /* Same width as countdown */
+    padding: 10px 0; /* Match height */
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Garamond', serif;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+/* Countdown Timer Styling 
+.countdown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 15px;
+    font-family: 'Garamond', serif;
+    color: rgb(253, 254, 255);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 160px; 
+    /* Fixed width 
+}*/
+
+
+#play-music:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Change background color of input text boxes and textarea */
+input, textarea {
+    font-family: 'Parisienne', cursive;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #cfcece; /* New background color */
+    color: #000000; /* Text color */
+}
+
+/* Optionally, you can change the background color when the input is focused */
+input:focus, textarea:focus {
+    background-color: #e0e0e0; /* Color when input is focused */
+    outline: none; /* Remove the default outline */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .countdown {
+        font-size: 20px;
+        padding: 8px 12px;
+        top: 5px;
+        right: 5px;
+        width: 140px; /* Adjust size for smaller screens */
+    }
+
+    #play-music {
+        top: 50px; /* Adjust positioning */
+        right: 5px;
+        width: 140px; /* Adjust size */
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown {
+        font-size: 18px;
+        padding: 5px 10px;
+        width: 130px;
+    }
+
+    #play-music {
+        top: 48px;
+        right: 5px;
+        width: 130px;
+        font-size: 12px;
+        padding: 6px 0;
+    }
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    padding: 20px;
+    background: rgba(16, 27, 13, 0.322);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(206, 212, 209, 0.021);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.055);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea, button {
+    font-family: 'Parisienne', cursive;
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button {
+    font-size: 25px !important;
+    font-weight: bold !important;
+    background: #1f3b23c2;
+    color: rgb(255, 255, 228);
+    cursor: pointer;
+    transition: background 0.3s;
+    padding: 12px 20px;
+}
+
+button:hover {
+    background: #173d16;
+}
+
+h1 {
+    font-size: 45px !important;
+    font-weight: bold;
+    color: rgb(255, 255, 228);
+}
+
+p {
+    font-size: 25px !important;
+    font-weight: bold;
+    color: rgb(255, 255, 228);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px !important;
+    }
+
+    p {
+        font-size: 22px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px !important;
+    }
+
+    p {
+        font-size: 20px !important;
+    }
+}

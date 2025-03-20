@@ -22,7 +22,8 @@ body {
     cursor: pointer;
     border-radius: 5px;
     font-size: 15px;
-    font-family: 'Garamond', serif;
+    /*font-family: 'Garamond', serif;*/
+    font-family: 'Parisienne', cursive;
     font-weight: bold;
     text-align: center;
     transition: background 0.3s;

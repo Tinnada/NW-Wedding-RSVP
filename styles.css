@@ -1,0 +1,134 @@
+body {
+    font-family: 'Parisienne', cursive;
+    background: url('images/wedding-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Play Music Button */
+#play-music {
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    width: 160px;
+    padding: 10px 0;
+    background: rgba(16, 27, 13, 0.322);
+    color: rgb(255, 255, 228);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Garamond', serif;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+#play-music:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Change background color of input text boxes and textarea */
+input, textarea {
+    font-family: 'Parisienne', cursive;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #cfcece;
+    color: #000000;
+}
+
+/* Input focus effect */
+input:focus, textarea:focus {
+    background-color: #e0e0e0;
+    outline: none;
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    padding: 20px;
+    background: rgba(16, 27, 13, 0.322);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(206, 212, 209, 0.021);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.055);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea, button {
+    font-family: 'Parisienne', cursive;
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button {
+    font-size: 25px !important;
+    font-weight: bold !important;
+    background: #1f3b23c2;
+    color: rgb(255, 255, 228);
+    cursor: pointer;
+    transition: background 0.3s;
+    padding: 12px 20px;
+}
+
+button:hover {
+    background: #173d16;
+}
+
+h1 {
+    font-size: 45px !important;
+    font-weight: bold;
+    color: rgb(255, 255, 228);
+}
+
+p {
+    font-size: 25px !important;
+    font-weight: bold;
+    color: rgb(255, 255, 228);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px !important;
+    }
+
+    p {
+        font-size: 22px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px !important;
+    }
+
+    p {
+        font-size: 20px !important;
+    }
+}
